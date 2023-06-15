@@ -3,7 +3,7 @@
 /*
  *main - use write function
  *
- *Return 0 (success)
+ *Return 1 (success)
  */
 int main(void)
 {
