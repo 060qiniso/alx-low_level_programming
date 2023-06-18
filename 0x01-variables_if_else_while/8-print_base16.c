@@ -7,15 +7,11 @@
 int main(void)
 {
 	int num;
-	char alph;
+	char alphNum[] = "0123456789abcdef";
 
-	for (num = 0; num <= 10; num++)
+	for (num = 0; num <= 16; num++)
 	{
-		putchar((num % 10) + '0');
-	}
-	for (alph = 'a'; alph <= 'f'; alph++)
-	{
-		putchar(alph);
+		putchar(alphNum[num]);
 	}
 	putchar('\n');
 	return (0);
