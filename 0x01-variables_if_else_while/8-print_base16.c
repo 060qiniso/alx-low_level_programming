@@ -7,11 +7,14 @@
 int main(void)
 {
 	int num;
-	char alphNum[] = "0123456789abcdef";
 
-	for (num = 0; num <= 16; num++)
+	for (num = 48; num < 58; num++)
 	{
-		putchar(alphNum[num]);
+		putchar(num);
+	}
+	for (num = 97; num < 103; num++)
+	{
+		putchar(num);
 	}
 	putchar('\n');
 	return (0);
