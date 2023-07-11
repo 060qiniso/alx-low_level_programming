@@ -6,32 +6,27 @@
  * which contains a copy of the string given as a parameter.
  * @str: copy of a string
  *
- * Return: the string copy
+ * Return: Always 0
  */
 
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
-	int p = 0, i = 1;
-	char *s;
+	char *aaa;
+	int i, r = 0;
 
 	if (str == NULL)
 		return (NULL);
-
-	while (str[i])
-	{
+	i = 0;
+	while (str[i] != '\0')
 		i++;
-	}
-	s = malloc((sizeof(char) * i) + 1);
 
-	if (s == NULL)
+	aaa = malloc(sizeof(char) * (i + 1));
+
+	if (aaa == NULL)
 		return (NULL);
 
-	while (p < i)
-	{
-		s[p] = str[p];
-		p++;
-	}
+	for (r = 0; str[r]; r++)
+		aaa[r] = str[r];
 
-	s[p] = '\0';
-	return (s);
+	return (aaa);
 }
