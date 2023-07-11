@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * strtow - Write a function that splits a string into words.
+ * count_word - Write a function that splits a string into words.
  * @s: string to evaluate
  *
  * Return: number of words
